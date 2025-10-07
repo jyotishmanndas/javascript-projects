@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    background-color: rgba(218, 206, 206, 0.873)
+}
+
+.profile-card {
+    height: 70%;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+p {
+    /* text-align: center; */
+    font-size: 13px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #dadada;
+}
+
+#dlt {
+    padding: 8px 13px;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+}
