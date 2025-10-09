@@ -2,7 +2,7 @@ let username = document.querySelector("#name");
 let des = document.querySelector("#des");
 let img = document.querySelector("#img");
 let form = document.querySelector("form");
-let btn = document.querySelector("#dlt")
+let main = document.querySelector("#main")
 
 let userdata = [];
 
@@ -28,14 +28,16 @@ function card() {
         </div>
         <p>${data.username}</p>
         <p>${data.des}</p>
-        <button id="dlt">Delete</button>
+        <button id=${idx} class="dlt">Delete</button>
     </div>`
     });
 
     document.querySelector("#main").innerHTML = sum
 }
 
-btn.addEventListener("click", () => {
-    console.log("jyoti")
+main.addEventListener("click", (e) => {
+    let id = e.target.id
+    userdata.splice(id, 1)
+    card()
 })
 card()
