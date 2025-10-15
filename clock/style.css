@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 36, 189, 0.833);
+}
+
+#clock {
+    height: 300px;
+    width: 300px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: relative;
+    padding: 6px;
+}
+
+.hand {
+    width: 48%;
+    border: 3px solid black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.3s linear;
+}
+
+#hourhand {
+    border-color: red;
+    border-radius: 10px 0 0px 10px;
+}
+
+#minhand {
+    border-color: black;
+    border-radius: 10px 0 0px 10px;
+
+}
+
+#sechand {
+    border: 3px solid black;
+    border-radius: 10px 0 0px 10px;
+}
